@@ -8,11 +8,14 @@
     <style>
         .header {
             display: flex;
+            background-color: #666;
+            flex-direction: row;
             justify-content: flex-start;
-            align-content: flex-start;
-            align-items: flex-start;
-            width: calc(100vw - 50px);
+            align-items: center;
+            width: 150px;
             margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: 10px;
             border: thin solid #fff;
             padding: 10px;
             margin-top: 0vw;
@@ -50,19 +53,9 @@
             margin-top: 0vh;
             margin-bottom: 0vh;
         }
-        .header p {
-            margin: 0;
-            text-align: center;
-            font-weight: bold;
-            font-size: clamp(0rem, 2.5vw, 1.5rem);
-            padding: 3px;
-            flex: auto;
-            overflow: hidden;
-            white-space: break-spaces;
-        }
 
         body {
-            background-color: #333;
+            background-color: #555;
             color: #fff;
             font-family: 'Lucida Sans Unicode';
             margin: 0;
@@ -73,15 +66,7 @@
             justify-content: flex-start;
             height: 100vh;
             text-align: center;
-            margin-top: 20px;
-            margin-left: 5vw;
-            margin-right: 5vw;
-        }
-        h1 {
-            font-weight: bold;
-        }
-        p {
-            margin-bottom: 20px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -95,7 +80,6 @@
             <h1>Political</h1>
             <h1>Compass</h1>
         </div>
-         <p>An in-depth algorithm designed to determine your political stance through statistical analysis.</p>
     </div>
 </body>
 </html>
