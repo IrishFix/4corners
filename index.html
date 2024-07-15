@@ -9,10 +9,11 @@
         .header {
             display: flex;
             justify-content: flex-start;
-            align-content: center;
+            align-content: flex-start;
             align-items: flex-start;
             width: calc(100vw - 50px); 
             margin-bottom: 20px;
+            margin-top: 0vw;
             gap: 10px;
         }
         .header .pageicon h1 {
@@ -50,8 +51,9 @@
         .header p {
             text-align: right;
             font-weight: bold;
-            font-size: 1.5vw;
+            font-size: clamp(0rem, 1.5vw, 1rem);
             margin-left: auto;
+            margin-top: 0vw;
         }
 
         body {
