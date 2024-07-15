@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PageStyle</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lucidia:wght@700&display=swap">
     <style>
+        .toptobottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .toptobottom img {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .toptobottom h1 {
+            font-weight: bold;
+            margin-top: 0px;
+        }
+
+        .sidebyside {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
         body {
             background-color: #333;
             color: #fff;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Lucida Sans Unicode', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,18 +41,28 @@
             justify-content: flex-start;
             height: 100vh;
             text-align: center;
+            margin-top: 20px;
         }
         h1 {
             font-weight: bold;
             margin-top: 20px;
         }
         p {
+            margin-left: 300px;
+            margin-right: 300px;
             margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>4corners Political Compass</h1>
+    <div class="sidebyside">
+        <div class="toptobottom">
+            <img src="4corners_icon.png" alt="Icon" width="50" height="50">
+            <h1>4corners</h1>
+        </div>
+
+        <h1>Political Compass</h1>
+    </div>
     <p>An in-depth algorithm designed to determine your political stance / views based on your answers to a series of un-biased questions. This project was designed as a hobby-project to push the boundaries of political-compass accuracy through statistical analysis.</p>
 </body>
 </html>
