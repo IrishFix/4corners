@@ -11,7 +11,7 @@
             justify-content: flex-start;
             align-content: flex-start;
             align-items: flex-start;
-            width: calc(100vw - 50px); 
+            width: calc(100vw - 50px);
             margin-bottom: 20px;
             border: thin solid #fff;
             padding: 10px;
@@ -51,18 +51,20 @@
             margin-bottom: 0vh;
         }
         .header p {
-            margin-left: auto;
-            margin-right: auto;
-            text-align: right;
+            margin: 0;
+            text-align: center;
             font-weight: bold;
-            font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+            font-size: clamp(0rem, 2.5vw, 1.5rem);
             padding: 3px;
+            flex: auto;
+            overflow: hidden;
+            white-space: break-spaces;
         }
 
         body {
             background-color: #333;
             color: #fff;
-            font-family: 'Lucida Sans Unicode', sans-serif;
+            font-family: 'Lucida Sans Unicode';
             margin: 0;
             padding: 0;
             display: flex;
