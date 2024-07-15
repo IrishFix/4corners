@@ -6,36 +6,52 @@
     <title>4corners Political Compass</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lucidia:wght@700&display=swap">
     <style>
-        .toptobottom {
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            align-items: flex-start;
+            width: calc(100vw - 50px); 
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        .header .pageicon h1 {
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-top: 0vh;
+            margin-bottom: 0vh;
+        }
+        .header .pageicon {
             display: flex;
             flex-direction: column;
             align-items: center;
+            align-content: center;
             gap: 0vh;
         }
-
-        .toptobottom img {
+        .header .pageicon img {
             display: block;
             margin: 0;
             padding: 0;
         }
-
-        .toptobottom h1 {
-            font-weight: bold;
-            margin-top: 0px;
-            font-size: smaller;
-        }
-
-        .sidebyside {
+        .header .title {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: flex-start;
-            gap: 2vw;
+            align-content: flex-start;
+            text-align: left;
+            gap: 0vh;
         }
-
-        .sidebyside h1 {
+        .header .title h1 {
             font-weight: bold;
-            white-space: nowrap;
-            font-size: x-large;
+            font-size: 1.2rem;
+            margin-top: 0vh;
+            margin-bottom: 0vh;
+        }
+        .header p {
+            text-align: right;
+            font-weight: bold;
+            font-size: 1.5vw;
+            margin-left: auto;
         }
 
         body {
@@ -63,14 +79,16 @@
     </style>
 </head>
 <body>
-    <div class="sidebyside">
-        <div class="toptobottom">
+    <div class="header">
+        <div class="pageicon">
             <img src="4corners_icon.png" alt="Icon" width="50" height="50">
             <h1>4corners</h1>
         </div>
-
-        <h1>Political Compass</h1>
-    </div>
-    <p>An in-depth algorithm designed to determine your political stance / views based on your answers to a series of un-biased questions. This project was designed as a hobby-project to push the boundaries of political-compass accuracy through statistical analysis.</p>
+        <div class="title">
+            <h1>Political</h1>
+            <h1>Compass</h1>
+        </div>
+        <p>An in-depth algorithm designed to determine your political stance / views based on your answers to a series of un-biased questions. This project was designed as a hobby-project to push the boundaries of political-compass accuracy through statistical analysis.</p>
 </body>
+s
 </html>
